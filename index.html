@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            /*background-color: #f00;*/
+        }
+        .contents{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            background-color: beige;
+            width: 800px;
+            height: 200px;
+            text-align: center;
+            margin: 0 auto;
+            
+        }
+        .text{
+            background-color: #000;
+            width: 800px;
+            height: 100px;
+            margin: 0 auto;
+            color: #fff;
+            
+        }
+        .box{
+            background-color: #00f;
+            width: 100px;
+            height: 100px;
+            margin: 10px auto;
+        }
+        .kapi{
+            padding-top: 10px;
+            width: 500px;
+            height: 500px;
+            margin: auto;
+        }
+        img{
+            max-width: 500px;
+            height: 500px;
+            margin: auto;
+        }
+        .Form {
+            margin: auto;
+            max-width: 500px;
+        }
+        .Form-Item {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .Form-Item-Label{
+            width: 100%;
+            max-width: 248px;
+            letter-spacing: 0.05em;
+            font-weight: bold;
+            text-align: left;
+        }
+        .Form-Item-Label-Required{
+            padding: 1px 1px;
+            margin: 1px 0;
+            color: white;
+            background-color: orange;
+            border: solid 1px orange;
+            border-radius: 6px;
+        }
+        .Form-Item-Input{
+            text-align: left;
+            width: 200px;
+            height: 10px;
+            padding: 5px;
+            border: solid 1px rgb(0, 0, 0);
+            border-radius: 2px;
+        }
+        .Form-Item-Textarea{
+            width: 500px;
+            height: 200px;
+            padding: 5px;
+            border: solid 1px orange;
+            border-radius: 6px;
+            background-color: rgb(255, 183, 90);
+        }
+        .Form-Btn{
+            border-radius: 6px;
+            margin-top: 32px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 280px;
+            display: block;
+            letter-spacing: 0.05em;
+            background: orange;
+            color: #fff;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        @media(max-width:767px){
+            body{
+                background-color: beige;
+            }
+            .contents{
+            grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="contents">
+        <div class="box1"><div class="box"></div><p>テキスト1</p></div>
+        <div class="box1"><div class="box"></div><p>テキスト2</p></div>
+        <div class="box1"><div class="box"></div><p>テキスト3</p></div>
+        <div class="box1"><div class="box"></div><p>テキスト4</p></div>
+   </div>
+   <div class="text">
+    <p>文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー</p>
+   </div>
+   <div class="kapi">
+    <img src="./img/kapi.webp" alt="">
+   </div>
+  
+   <form action="" method="get">
+    <div class="Form">
+        <div class="Form-Item">
+            <p class="Form-Item-Label">お名前:</p>
+            <input type="text" name="name" class="Form-Item-Input" required>
+        </div>
+        <div class="Form-Item">
+            <label>返信を希望する方はチェックしてください:<input type="checkbox" name="ml" value=""></label>
+        </div>
+        <div class="Form-Item">
+            <p class="Form-Item-Label isMsg">メッセージ</p>
+            <textarea class="Form-Item-Textarea" name="inquiry" required></textarea>
+        </div>
+    </div>
+</body>
+</html>
